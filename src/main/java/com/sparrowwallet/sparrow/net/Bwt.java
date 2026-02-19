@@ -80,6 +80,8 @@ public class Bwt {
                     NativeUtils.loadLibraryFromJar("/native/windows/x64/" + libName);
                 } else if(osArch.equals("aarch64")) {
                     NativeUtils.loadLibraryFromJar("/native/linux/aarch64/" + libName);
+                } else if(osArch.equals("ppc64le")) {
+                    NativeUtils.loadLibraryFromJar("/native/linux/ppc64le/" + libName);
                 } else {
                     NativeUtils.loadLibraryFromJar("/native/linux/x64/" + libName);
                 }
